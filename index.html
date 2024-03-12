@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Multimedia</title>
+</head>
+<body>
+
+    <!--Adding Figuers to images-->
+    <figure>
+        <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="A dish of pasta" title="A dsih of pasta" width="400">
+
+        <figcaption>A dish of pasta</figcaption>
+    </figure>
+
+    <!-- Adding videos -->
+
+    <div>
+        <video autoplay loop  muted controls width="500">
+            <source src="./wildlife.mp4" type="video/mp4">
+            <source src="./wildlife.webm" type="video/webm">
+            <p>sorry your device do not support video <a href="./wildlife.mp4">Download it instead</a></p>
+        </video>
+
+        <!-- NB: do not use poster and autoplay together -->
+        <!-- posters are images that appear before the start of a video. Images can be added locally or remotely (i.e poster="link") -->
+        <video muted controls width="500">
+            <source src="./wildlife.mp4" type="video/mp4">
+            <p>sorry your device do not support video <a href="./wildlife.mp4">Download it instead</a></p>
+        </video>
+
+        <iframe width="500" height="300" src="https://www.youtube.com/embed/_-xpDRIGk9M" title="MR MACARONI ON CURIOSITY MADE ME ASK!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <!-- how to link pdf to webpage. -->
+    <div>
+        <object data="./team-of-the-week.pdf" type="application/pdf" height="650" width="500"></object>
+    </div>
+
+    <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.092794066839!2d3.374268874080659!3d6.509937723322687!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c59445441cd%3A0x86e2ff863721fb2c!2sUnivelcity!5e0!3m2!1sen!2sng!4v1710243842004!5m2!1sen!2sng" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    
+</body>
+</html>
