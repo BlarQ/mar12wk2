@@ -25,7 +25,7 @@
 </head>
 <body>
     <h1>Sing up for Internship</h1>
-    <form action="" method="post">
+    <form>
         <fieldset>
             <legend>Personal Information</legend>
             <ul>
@@ -127,11 +127,34 @@
                     <label for="ja">JavaScript</label>
                 </li>
                 <li>
-                    
+                    <label for="resume">upload resume</label>
+                    <input type="file" name="resume" id="resume" accept=".pdf,.png,.webm" multiple>
                 </li>
-                <li></li>
+                <li>
+                    <label for="pw">Set Password</label>
+                    <input type="password" name="password" id="pw">
+                </li>
+                <li>
+                    <!-- <input type="submit" value="apply"> -->
+                    <button type="submit">Submit</button>
+                </li>
             </ul>
         </fieldset>
     </form>
+
+    <footer>
+        <details>
+            <summary>
+                Who am I
+            </summary>
+            <p>I do not know</p>
+        </details>
+
+        <p>&copy; Copyright <span></span></p>
+    </footer>
 </body>
+
+<script>
+    document.querySelector('span').textContent = new Date().getFullYear()
+</script>
 </html>
